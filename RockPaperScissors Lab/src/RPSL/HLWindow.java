@@ -4,36 +4,17 @@ import javax.swing.JOptionPane;
 
 public class HLWindow {
 	
-	public void msg(ImageIcon icon) {
-		JOptionPane.showMessageDialog(null, icon); //sends a message to the user
-	}
-	
 	public String in(String msg) {
-		return JOptionPane.showInputDialog(msg);
+		return JOptionPane.showInputDialog(msg); //shows a jpane message to the user and asks for input
 	}
 	
 	public void println(String msg) {
-		System.out.println(msg);
-	}
-	
-	public int option1(String[] options, String[][] strings) {
-		return JOptionPane.showOptionDialog(null, strings, "Seating Chart Creator", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+		System.out.println(msg); //prints out a message
 	}
 	
 	public void msg1(String s) {
-		JOptionPane.showMessageDialog(null, s);
+		JOptionPane.showMessageDialog(null, s); //shows a jpane message
 		
 	}
-
-	public void msg2(String[][] strings) {
-		JOptionPane.showMessageDialog(null, strings);
-		
-	}
-
-	public int option(String[] replay, String string) {
-		// TODO Auto-generated method stub
-		return JOptionPane.showOptionDialog(null, string, "Replay", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, replay, replay[0]);
-	}
-
 
 }
