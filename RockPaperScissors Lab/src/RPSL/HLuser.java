@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HLuser {
+	//instance variables
 	public static final String[] BUTTONS = {"rock", "paper", "scissors", "exit"}; 
 	public static final String[] BUTTONS2 = {"Play again", "exit"}; 
 	private HLWindow _w;
@@ -14,6 +15,8 @@ public class HLuser {
 	int roundsWon;
 	int roundsLost;
 	
+	//constructor
+	//holds the game mechanics, checks that the player has not lost three rounds, and updates number of rounds won or lost
 	public HLuser() {
 		_w = new HLWindow();
 		_view = new HLview();
@@ -36,6 +39,7 @@ public class HLuser {
 		end();
 	}
 	
+	//method to check whether or not the player won the round based on their choice
 	public int choice(int x) {
 		String comp = _hand.randomMove();
 		if (x == 0) { //rock
@@ -76,6 +80,7 @@ public class HLuser {
 		return 0;
 	}
 	
+	//asks the player if they'd like to play again, and plays the game again until they choose to stop
 	public void end() {
 		int x1 = _w.option(BUTTONS2, "Would you like to play again?");
 		if (x1 == 0) {
