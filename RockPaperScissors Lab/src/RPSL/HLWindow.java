@@ -16,5 +16,10 @@ public class HLWindow {
 		JOptionPane.showMessageDialog(null, s); //shows a jpane message
 		
 	}
+	
+	//used to to ask and replay the game
+	public int option(String[] replay, String string) {
+		return JOptionPane.showOptionDialog(null, string, "Replay", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, replay, replay[0]);
+	}
 
 }
