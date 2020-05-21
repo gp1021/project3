@@ -1,6 +1,6 @@
 package RPSL;
 
-//runs the HLuser class and 
+//allows the HLuser class to run and bring up the jpane
 public class HLmain {
 
 	public static void main(String[] args) {
